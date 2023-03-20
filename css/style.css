@@ -42,21 +42,24 @@ span {
 }
 header {
   background-color: var(--light-orange);
+  width: 100%;
+  min-height: 45rem;
+}
+.header-container {
   width: 85%;
-  height: 680px;
   padding-left: 7.5%;
   padding-right: 7.5%;
-  padding-top: 30px;
+  padding-top: 2.5rem;
 }
 header a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: poppins-2;
   font-weight: 700;
   color: var(--lightgray);
 }
 header a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--lightgray);
 }
 #flag:hover {
   border-bottom: 0px;
@@ -83,9 +86,11 @@ header a:hover {
   width: 118.42px;
   margin-bottom: 100px;
 }
+.logo a:hover {
+  border-bottom: 0px;
+}
 nav {
   display: flex;
-  background-color: aqua;
   height: 40px;
   margin-bottom: 120px;
 }
@@ -129,6 +134,7 @@ nav {
   font-size: 56px;
   font-weight: 500;
   margin-right: 0px;
+  color: var(--gray);
 }
 .landing h6 {
   width: 85%;
@@ -165,12 +171,13 @@ nav {
 }
 
 .users {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   font-family: oxygen-1;
   font-size: 30px;
   font-weight: 500;
   width: 40%;
   margin-left: 11%;
+  color: var(--gray);
 }
 
 .paga-uses {
@@ -179,7 +186,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   padding: 45px 0% 45px 0%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 78%;
   margin: 0px 11% 0px 11%;
 }
@@ -218,6 +225,7 @@ nav {
   font-size: 48px;
   font-family: oxygen-1;
   padding: 10px 0px 100px 0px;
+  color: var(--gray);
 }
 .why-paga p {
   background-color: #fdb913;
@@ -240,11 +248,11 @@ nav {
   width: 70%;
   margin: 0px 15% 0px 15%;
   align-content: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .why-1 {
   margin: auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .why-1 h3 {
   color: var(--orange);
@@ -274,7 +282,7 @@ nav {
   padding: 0px 10% 0px 10%;
 }
 .TV-test {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 70%;
 }
 .TV-test h1 {
@@ -293,7 +301,7 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 56px 40px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .tv-stations img {
   width: 146px;
@@ -313,13 +321,14 @@ nav {
 }
 .agents {
   display: flex;
+  gap: 0%;
 }
 
 .agent-text {
-  border: 2px solid black;
-  width: 60%;
+  /* border: 2px solid black; */
+  width: 45%;
   padding: 96px 0px 0px 110px;
-  height: 470px;
+  height: 400px;
 }
 .agent-text h5 {
   background-color: #fdb913;
@@ -336,26 +345,27 @@ nav {
   font-family: oxygen-1;
   font-size: 46px;
   padding-top: 8px;
+  color: var(--gray);
 }
 
 .agent-text p {
   font-family: oxygen-2;
   font-size: 19px;
   padding-top: 18px;
-  width: 85%;
+  width: 90%;
 }
 
 #agent-link-1 a {
   text-decoration: none;
   color: var(--orange);
-  background-color: white;
+  /* background-color: white; */
   border-radius: 4px;
   padding: 12px 28px;
 }
 #agent-link-2 a {
   text-decoration: none;
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 4px;
   padding: 12px 28px;
 }
@@ -364,23 +374,42 @@ nav {
   display: flex;
   gap: 18px;
   padding-top: 40px;
-  padding-bottom: 67;
   font-family: oxygen-2;
   font-size: 14px;
   font-weight: 600;
 }
-#img-1 {
-  position: relative;
-  margin-top: 20px;
+.img-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  /* border: 2px solid white; */
 }
-#img-2 {
+.img-2 {
   position: relative;
+  /* border: 2px solid black; */
+  width: 180px;
+  height: 180px;
+  left: 270px;
+  top: 30px;
+  right: 100px;
 }
-#img-3 {
-  padding-top: 20%;
+.img-3 {
+  position: relative;
+  /* border: 2px solid black; */
+  width: 200px;
+  height: 200px;
+  top: 210px;
+  right: 100px;
 }
 .agent-img {
-  padding: 20px;
+  padding: 50px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px 10px;
+  /* border: 2px solid black; */
+  width: 45%;
+  height: 470px;
 }
 .customer-text {
   font-family: oxygen-1;
@@ -391,14 +420,15 @@ nav {
 }
 .customers {
   width: 85%;
-  margin: 0px 7.5% 0px 7.5%;
+  margin: 0px 7.5% 80px 7.5%;
   display: flex;
   gap: 4%;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-1 {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 22%;
 }
 .customers-1 h2 {
@@ -417,11 +447,203 @@ nav {
   text-align: center;
 }
 .customers-1 img {
-  padding: 0px 11%;
+  padding: 0px 14%;
 }
 .customers-1 i {
   width: 20px;
   height: 17px;
   color: #55acee;
   padding-left: 10px;
+}
+.buttons {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.section-6-container {
+  width: 80%;
+  margin: 0px 10%;
+  align-items: center;
+  justify-content: center;
+}
+.partners-text h1 {
+  font-size: 46px;
+  font-family: oxygen-1;
+  color: var(--gray);
+  /* border: 2px solid black; */
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: var(--light-orange);
+  margin-bottom: 0px;
+  height: 460px;
+  max-width: 100%;
+}
+.footer-container {
+  display: flex;
+  gap: 5%;
+  padding: 80px 10% 0px 10%;
+}
+.footer-text {
+  width: 27%;
+  height: 200px;
+  /* border: 2px solid black; */
+  line-height: 24px;
+  text-align: justify;
+}
+.footer-text a:hover {
+  border-bottom: 0px;
+}
+.socials {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+}
+.social-1 {
+  background-color: rgb(248, 213, 200);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+#insta {
+  padding-left: 5px;
+  padding-bottom: 1px;
+}
+#fb {
+  padding-left: 8px;
+  padding-bottom: 1.5px;
+}
+#twit {
+  padding-left: 5px;
+  padding-bottom: 1.5px;
+}
+#yt {
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+.footers {
+  /* border: 2px solid black; */
+  width: 80%;
+  display: flex;
+  /* gap: 10%; */
+}
+
+footer a {
+  text-decoration: none;
+  font-family: oxygen-2;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--lightgray);
+  line-height: 30px;
+}
+footer a:hover {
+  border-bottom: 2px solid var(--lightgray);
+}
+footer h3 {
+  color: var(--spanorange);
+  font-size: 20px;
+  font-family: oxygen-1;
+  padding-bottom: 22px;
+}
+.Reach {
+  padding-left: 10%;
+  /* justify-content: center; */
+  align-items: baseline;
+}
+
+.Links {
+  padding-left: 15%;
+  width: 15%;
+}
+.About {
+  padding-left: 1%;
+}
+.Products {
+  padding-left: 17%;
+}
+.last-footer {
+  display: flex;
+  /* padding-top: 130px; */
+  padding: 130px 10% 0px 10%;
+}
+.right-last {
+  margin-left: auto;
+}
+.last-footer p {
+  font-family: oxygen-2;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--lightgray);
+  line-height: 30px;
+}
+.section-7 {
+  background-color: var(--orange);
+  width: 82%;
+  height: 400px;
+  margin: 0px 9% 0px 9%;
+  border-radius: 40px;
+  color: white;
+  align-content: center;
+}
+
+.download {
+  display: flex;
+  gap: 10%;
+}
+
+.download-text {
+  /* border: 2px solid black; */
+  width: 45%;
+  padding: 60px 0px 0px 110px;
+  height: 320px;
+}
+.download-text h5 {
+  background-color: #fdb913;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 12px 15px 0px 15px;
+  font-size: 16px;
+  font-family: oxygen-2;
+  font-weight: 500;
+}
+.download-text h1 {
+  font-family: oxygen-1;
+  font-size: 36px;
+  padding-top: 8px;
+}
+.download-img {
+  /* border: 2px solid black; */
+  padding-top: 40px;
+}
+
+.download-link {
+  display: flex;
+  gap: 40px;
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  height: 70px;
+}
+
+#apple-link img {
+  /* width: 200px;
+  height: 60px; */
+  /* border: 2px solid black; */
+  border-radius: 10px;
+}
+
+#goggle-link img {
+  /* width: 200px;
+  height: 60px; */
+  /* border: 2px solid black; */
+  border-radius: 10px;
+}
+.download-link img {
+  width: 200px;
+  aspect-ratio: 9/3;
 }
