@@ -643,10 +643,10 @@ footer {
 }
 .footer-container {
   width: 85%;
-
   display: flex;
   justify-content: space-between;
   margin: 80px 5% 0 10%;
+  padding-top: 96px;
 }
 .footer-text {
   width: 25%;
@@ -736,7 +736,7 @@ footer h3 {
 }
 .last-footer {
   display: flex;
-  padding: 100px 10% 0px 10%;
+  padding: 100px 10% 24px 10%;
 }
 .right-last {
   margin-left: auto;
